@@ -12,10 +12,12 @@ package helpers;
 public class Deportista extends Persona {
     
     //Definimos atributos
-    private String deporte;
+    private String deporte = "Ciclista";
     private int experiencia;
-    private int horas;
-    private String logros;
+    private int horas = 11;
+    private String logros = "Campeón de la localidad";
+    
+    
     
     /**
      * Declaración del constructor de la clase
@@ -28,6 +30,7 @@ public class Deportista extends Persona {
       setEdad(29);
       setEmail("archaga.kevin@gmail.com");
       setSexo('M');
+      
       
     }
     
@@ -95,7 +98,7 @@ public class Deportista extends Persona {
       * Método Get, con el cual obtendremos el valor de logros de tipo String
       * @return logros
       */
-     public String getLogross(){
+     public String getLogros(){
          return this.logros;
      }
      
