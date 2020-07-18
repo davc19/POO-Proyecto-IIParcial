@@ -39,7 +39,7 @@ public class MainPrincipal {
         System.out.println("Deporte: " + deportista.getDeporte());
         System.out.println("Años de Experiencia: " + deportista.calcularExperiencia(2005)+ " años");
         System.out.println("Práctica semanal: " + deportista.getHoras() + " horas");
-        System.out.println("Nombre: " + deportista.getLogros());
+        System.out.println("Logros: " + deportista.getLogros());
         System.out.println("-------------------------------------------");
         
         //impresion de la clase médico
