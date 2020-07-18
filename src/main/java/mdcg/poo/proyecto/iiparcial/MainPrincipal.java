@@ -6,6 +6,7 @@
 package mdcg.poo.proyecto.iiparcial;
 
 import helpers.Deportista;
+import helpers.Medico;
 
 /**
  * Clase que contiene el main para poder visualizar nuestro código
@@ -41,7 +42,17 @@ public class MainPrincipal {
         System.out.println("Nombre: " + deportista.getLogros());
         System.out.println("-------------------------------------------");
         
-        // Aquí impresion de la clase médico
+        //impresion de la clase médico
+        Medico medico = new Medico();
+        
+        System.out.println("Profesión: " + medico.Profesion());
+        System.out.println("Nombre: " + medico.getNombre());
+        System.out.println("Identidad: " + medico.getIdentidad());
+        System.out.println("Edad: " + medico.getEdad());
+        System.out.println("Sexo: " + medico.getSexo());
+        System.out.println("Direccion: " + medico.getDireccion());
+        System.out.println("Email: " + medico.getEmail());
+        medico.ImprimirMedico();
     }
     
 }
