@@ -89,5 +89,5 @@ public abstract class Persona
 
     
     //Metodo abstracto
-    public abstract String Categoria();
+    public abstract String Profesion();
 }
