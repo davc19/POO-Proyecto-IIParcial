@@ -34,6 +34,8 @@ public class MainPrincipal {
         System.out.println(deportista.Profesion()); //Impresion clase deportista
         System.out.println("Identidad: " + deportista.getIdentidad());
         System.out.println("Nombre: " + deportista.getNombre());
+        System.out.println("Sexo: " + deportista.getSexo());
+        System.out.println("Edad: " + deportista.getEdad()+ " años");
         System.out.println("Direccion: " + deportista.getDireccion());
         System.out.println("Correo electrónico: " + deportista.getEmail());
         System.out.println("Deporte: " + deportista.getDeporte());
