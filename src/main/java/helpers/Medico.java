@@ -1,5 +1,9 @@
 package helpers;
 
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.util.Date;
+
 /**
  *
  * Heiby Barahona
@@ -7,10 +11,13 @@ package helpers;
  */
 public class Medico extends Persona{
     
+    Date date = new Date();
+    LocalDate localDate = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+    
+    int anioActual  = localDate.getYear();
     String especialidad;
     String lugarAtencion;
-    int horasAtencion;
-    int aniosExperiencia = 5;
+    String horasAtencion;
 
     @Override
     public String Profesion() {
@@ -24,10 +31,23 @@ public class Medico extends Persona{
         setEdad(33);
         setEmail("mariap@gmail.com");
         setSexo('F');
+        especialidad = "Cirugia General";
+        lugarAtencion = "Hospital y Clínicas Viera ";
+        horasAtencion = "10:00 a.m. - 4:00 p.m.";
+    }
+    public int AniosExperiencia (){
+        int anioComienzoLaboral = 2014;
+        return anioActual-anioComienzoLaboral;
     }
     
-    public int AniosExperiencia(){
-        return aniosExperiencia;
+    public void ImprimirMedico (){
+        System.out.println("Especialidad: " +especialidad);
+        System.out.println("Lugar de atención: " +lugarAtencion);
+        System.out.println("Hora de atención: " +horasAtencion);
+        System.out.println("Años de experiencia: " + AniosExperiencia());
+        System.out.println("------------------------------------------");
     }
+    
+    
     
 }
